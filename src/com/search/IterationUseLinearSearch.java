@@ -1,6 +1,6 @@
 package com.search;
 import java.util.Scanner;
-public class SearchElement {
+public class IterationUseLinearSearch{
 
     public static int searchElement(int arr[],int num){
 
@@ -30,4 +30,6 @@ public class SearchElement {
     }
 }
 
-//using LinearSearch
+
+//Time = O(n)
+//Space = O(1)

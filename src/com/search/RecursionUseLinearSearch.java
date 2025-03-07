@@ -1,7 +1,11 @@
 package com.search;
 
-public class SearchElement2 {
+public class RecursionUseLinearSearch {
     public static int searchElement(int arr[],int num,int size){
+
+        if(size==0){
+            return -1;
+        }
 
         if(num==arr[size-1]){
             return size-1;
@@ -22,3 +26,6 @@ public class SearchElement2 {
         }
     }
 }
+
+//Time = O(n)
+//Space = O(n) because it every time creating new stack frame
