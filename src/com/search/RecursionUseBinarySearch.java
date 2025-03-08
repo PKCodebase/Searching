@@ -19,7 +19,7 @@ public class RecursionUseBinarySearch {
     }
     public static void main(String[] args) {
         int arr[] = {1,2,3,4,5,6,7,8,9};
-        int num = 5;
+        int num = 8;
         int start = 0;
         int end = arr.length-1;
         int result = binarySearch(arr,num,start,end);
