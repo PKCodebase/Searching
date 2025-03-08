@@ -11,7 +11,7 @@ public class FirstOccuranceUseBinarySearch {
             }else if(num>arr[mid]){
                 start = mid +1;
             }else if (num == arr[mid]){
-                if(arr[mid-1] != arr[mid]){
+                if(mid == 0 || arr[mid-1] != arr[mid]){
                     return mid;
                 }else{
                     end = mid -1;
@@ -23,7 +23,7 @@ public class FirstOccuranceUseBinarySearch {
     }
     public static void main(String[] args) {
         int arr[] = {10,20,30,30,40,60,70,80,90};
-        int num = 30;
+        int num = 50;
         int start = 0;
         int end = arr.length-1;
         int result = firstOccurance(arr,num,start,end);
@@ -35,3 +35,5 @@ public class FirstOccuranceUseBinarySearch {
         }
     }
 }
+//Time:O(log n)
+//Space:O(1)

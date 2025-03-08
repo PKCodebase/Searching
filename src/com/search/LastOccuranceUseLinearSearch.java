@@ -1,11 +1,11 @@
 package com.search;
 
-public class FirstOccuranceUsingLinearSearch {
+public class LastOccuranceUseLinearSearch {
+    public static int lastOcuurance(int arr[],int num){
 
-    public static int firstOccurance(int arr[],int num){
-        int n = arr.length;
-        for(int i=0;i<n;i++){
-            if(arr[i] == num){
+        int n = arr.length-1;
+        for(int i= n;i>=0;i--){
+            if(num == arr[i]){
                 return i;
             }
         }
@@ -13,9 +13,9 @@ public class FirstOccuranceUsingLinearSearch {
     }
     public static void main(String[] args) {
         int arr[] = {1,5,3,4,4,5,6,5,8,9};
-        int num = 5;
+        int num = 8;
 
-        int result = firstOccurance(arr,num);
+        int result = lastOcuurance(arr,num);
         System.out.println(result);
         if (result == -1) {
             System.out.println("Element not found");
