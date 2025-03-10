@@ -29,7 +29,7 @@ public class Sqrt {
     }
 
     public static void main(String[] args) {
-        int num = 8;
+        int num = 18;
         int result = mySqrt(num);
         System.out.println(result);
     }
